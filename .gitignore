@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+results/*
+!results/.gitkeep
+!results/README.md
+
+# Prepared data and machine-specific provenance are reproducible and are not
+# published. Keep only aggregate validation summaries and predictor schemas.
+data/prepared/*
+!data/prepared/.gitkeep
+!data/prepared/validation_summary.json
+!data/prepared/validation_report.md
+!data/prepared/feature_columns.txt
+!data/prepared/training_schema.json
