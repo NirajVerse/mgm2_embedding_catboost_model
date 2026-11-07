@@ -1,0 +1,40 @@
+{
+  "prepared_manifest": "data/prepared/input_manifest.json",
+  "original_table": "data/prepared/original_temperature_training_table.csv",
+  "mapseq_table": "data/prepared/mapseq_temperature_training_table.csv",
+  "feature_columns": "data/prepared/feature_columns.txt",
+  "training_schema": "data/prepared/training_schema.json",
+  "candidate_config": "configs/model_candidates.json",
+  "asv_reference_predictions": "../MGM2/catboost_temperature_output_5fold_20260926/tables/test_predictions.csv",
+  "asv_reference_metrics": "../MGM2/catboost_temperature_output_5fold_20260926/tables/test_metrics.csv",
+  "asv_reference_summary": "../MGM2/catboost_temperature_output_5fold_20260926/result_summary.json",
+  "results_dir": "results",
+  "expected_sha256": {
+    "prepared_manifest": "c82e4fa10d1dd9ffebb1a86b0ff0e02c3efa0f14e57d6d30658afc430c469179",
+    "asv_reference_predictions": "4b011353a476d7753f98bf05a8b938ab953cbdf3f9e7da8ec55acf4190fb34ed",
+    "asv_reference_metrics": "02b1cebd35719bf69b85664bd02b3e3ab89d2c825da22d754af772fe3325b8a2",
+    "asv_reference_summary": "864f6e0b15545d4438675620d71fb596d3301544d25991b0d1710396777316f5"
+  },
+  "expected": {
+    "samples": 1191,
+    "features": 224,
+    "development_samples": 946,
+    "test_samples": 245,
+    "development_cruises": 27,
+    "test_cruises": 8,
+    "cv_folds": 5
+  },
+  "settings": {
+    "maximum_iterations": 4000,
+    "early_stopping_rounds": 200,
+    "random_seed": 42,
+    "thread_count": -1,
+    "task_type": "CPU",
+    "devices": null,
+    "verbose": 100,
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261106,
+    "calculate_shap": true,
+    "shap_max_samples": 250
+  }
+}

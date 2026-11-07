@@ -1,0 +1,46 @@
+{
+  "candidates": [
+    {
+      "name": "depth4_lr003_l2_3",
+      "depth": 4,
+      "learning_rate": 0.03,
+      "l2_leaf_reg": 3.0,
+      "random_strength": 1.0
+    },
+    {
+      "name": "depth6_lr003_l2_3",
+      "depth": 6,
+      "learning_rate": 0.03,
+      "l2_leaf_reg": 3.0,
+      "random_strength": 1.0
+    },
+    {
+      "name": "depth8_lr003_l2_3",
+      "depth": 8,
+      "learning_rate": 0.03,
+      "l2_leaf_reg": 3.0,
+      "random_strength": 1.0
+    },
+    {
+      "name": "depth4_lr005_l2_10",
+      "depth": 4,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 10.0,
+      "random_strength": 0.5
+    },
+    {
+      "name": "depth6_lr005_l2_10",
+      "depth": 6,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 10.0,
+      "random_strength": 0.5
+    },
+    {
+      "name": "depth8_lr005_l2_10",
+      "depth": 8,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 10.0,
+      "random_strength": 0.5
+    }
+  ]
+}
