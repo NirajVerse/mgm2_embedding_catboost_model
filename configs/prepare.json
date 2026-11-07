@@ -1,0 +1,31 @@
+{
+  "original_embeddings": "../mgm2_output/original/community_embeddings_small_cls.h5",
+  "mapseq_embeddings": "../mgm2_output/latest/community_embeddings_mapseq_small_cls.h5",
+  "original_metadata": "../dataset/MGM2_taxonomy_files/metadata.csv",
+  "mapseq_metadata": "../dataset/MGM2_MAPseq_taxonomy_files/metadata.csv",
+  "frozen_splits": "../MGM2/catboost_temperature_output_5fold_20260926/tables/split_assignments.csv",
+  "processed_material_ids": "../MGM2/prep_output/tables/sample_ids.txt",
+  "output_dir": "data/prepared",
+  "expected_sha256": {
+    "original_embeddings": "6471712c038ac6164207f55e6f27c0b30c963d18e9b145a7e8759412d8b2182f",
+    "mapseq_embeddings": "072244785c5f6e1df6f8c937e0d80a50d46e570dcaf4854e43001b9ae6914c53",
+    "original_metadata": "4103337faad2ddf5f853cf255ab63c2bc895e7e8a4442801d635738bb7292e18",
+    "mapseq_metadata": "4103337faad2ddf5f853cf255ab63c2bc895e7e8a4442801d635738bb7292e18",
+    "frozen_splits": "4845b1ce599b35b61cb2a7a8fb233c67b127bd3f80bcf04c763435fe3eb33625",
+    "processed_material_ids": "5aec4136b9f10dac9c545416d9927477176a368f99380e774e2bbc78a0ca5149"
+  },
+  "expected": {
+    "embedding_rows": 3896,
+    "embedding_features": 224,
+    "metadata_rows": 3691,
+    "hdf5_only_rows": 205,
+    "usable_source_rows": 3689,
+    "material_samples": 1226,
+    "temperature_samples": 1191,
+    "development_samples": 946,
+    "test_samples": 245,
+    "development_cruises": 27,
+    "test_cruises": 8,
+    "cv_folds": 5
+  }
+}
