@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "date_conflict_materials": 11,
+    "development_samples": 946,
+    "embedding_features": 224,
+    "embedding_rows": 3896,
+    "exact_duplicate_groups": 2,
+    "hdf5_only_rows": 205,
+    "material_samples": 1226,
+    "metadata_rows": 3691,
+    "temperature_samples": 1191,
+    "test_samples": 245,
+    "usable_source_rows": 3689
+  },
+  "failed_checks": 0,
+  "generated_at_utc": "2026-11-06T23:52:54.126596+00:00",
+  "passed_checks": 91,
+  "statement": "Preparation and validation completed; no predictive model was trained.",
+  "status": "PASS",
+  "total_checks": 93,
+  "warning_checks": 2,
+  "warnings": [
+    {
+      "check": "exact_duplicate_embedding_vectors_reviewed",
+      "details": "Exact duplicate vectors are reported for review; they are not automatically removed because sample IDs remain distinct.",
+      "expected": 0,
+      "observed": 2,
+      "severity": "warning",
+      "status": "WARN"
+    },
+    {
+      "check": "material_date_utc_consistent",
+      "details": "Date conflicts are retained in date_utc_values and date_utc is left blank. Date is not used in the temperature model.",
+      "expected": 0,
+      "observed": 11,
+      "severity": "warning",
+      "status": "WARN"
+    }
+  ]
+}
